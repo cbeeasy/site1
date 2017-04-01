@@ -1,3 +1,9 @@
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -18,8 +24,9 @@
        {% block nav %}
 
        <ul>
-            <li><a href="/date">Date</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/test">Form</a></li>
+            <li><a href="/date">Date</a></li>            
+            <li><a href="/admin">Admin</a></li>
 
        </ul>
 

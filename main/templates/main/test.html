@@ -12,13 +12,13 @@
 
    <link rel="stylesheet" href="/media/css/style.css" />
 
-   <title>{% block title %}Date{% endblock %}</title>
+   <title>{% block title %}Form{% endblock %}</title>
 
 </head>
 
 <body>
 
-<header><h1>Date</h1></header>
+<header><h1>Form</h1></header>
     <nav>
 
        {% block nav %}
@@ -32,11 +32,24 @@
 
    </nav>
 
+   {% bootstrap_messages %}
+
+    <!--{# Display a form #}
+    <form action="/url/to/submit/" method="post" class="form">
+        {% csrf_token %}
+
+        {% buttons %}
+        <button type="submit" class="btn btn-primary">
+            {% bootstrap_icon "star" %} Submit
+        </button>
+        {% endbuttons %}
+    </form>
+
     <section id="content">
 
         {% block content %}{% endblock %}
 
-   </section>
+   </section>!-->
 
 <footer>&copy; CbCorp</footer>
 
